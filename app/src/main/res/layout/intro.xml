@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="100"
+    android:paddingTop="70dp">
+
+    <ImageView
+
+        android:layout_weight="50"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/piggy_bank"
+        android:layout_gravity="bottom"
+        android:scaleType="center"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#5fc536"
+        android:text="BK Wallet"
+        android:gravity="center"/>
+
+    <TextView
+
+        android:id="@+id/tvSvm"
+        android:textSize="30sp"
+        android:textColor="#5fc536"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/mac/Desktop/MyProject/app/libs/achartengine-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1bd51fadf0ff57472b9c0bb3955a28fc0fbc97b8">
+        <dex dex="/Users/mac/Desktop/MyProject/app/build/intermediates/pre-dexed/debug/achartengine-1.2.0_e302c6c533bd24ce4316a1a69c33858abdd337b0.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyProject</string>
+
+    <string-array name="thuocloai_array">
+        <item>Tiền mặt</item>
+        <item>Tài Khoản Ngân Hàng</item>
+        <item>Tài Khoản Tiết Kiệm</item>
+    </string-array>
+
+    <string-array name="ngoaite_array">
+        <item>VND</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GPD</item>
+        <item>SGD</item>
+    </string-array>
+
+    <string-array name="kihan_array">
+        <item>1 Tuần</item>
+        <item>2 Tuần</item>
+        <item>3 Tuần</item>
+        <item>1 Tháng</item>
+        <item>3 Tháng</item>
+        <item>6 Tháng</item>
+        <item>9 Tháng</item>
+        <item>1 Năm</item>
+        <item>2 Năm</item>
+        <item>3 Năm</item>
+        <item>4 Năm</item>
+        <item>5 Năm</item>
+        <item>10 Năm</item>
+    </string-array>
+</resources>
