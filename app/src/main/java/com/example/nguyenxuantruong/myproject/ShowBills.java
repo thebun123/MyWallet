@@ -82,7 +82,7 @@ public class ShowBills extends AppCompatActivity {
         //yesterday once more:maxx hay
         void populateFrom(Bill r) {
             NoidungB.setText(r.getNoiDung());
-            dateB.setText(r.getTime()+"");
+            dateB.setText(r.getNgayPhatSinh()+"");
 
             SotienB.setText(r.getSoTien());
             if(r.isChiTieu()){

@@ -1,10 +1,21 @@
 <resources>
-    <string name="app_name">MyProject</string>
+    <string name="app_name">BK Wallet</string>
 
     <string-array name="thuocloai_array">
         <item>Tiền mặt</item>
         <item>Tài Khoản Ngân Hàng</item>
         <item>Tài Khoản Tiết Kiệm</item>
+    </string-array>
+
+    <string-array name="noidung_array">
+        <item>Nhà nghỉ</item>
+        <item>Bệnh viện</item>
+        <item>Trường học</item>
+        <item>Công việc</item>
+        <item>Gia đình</item>
+        <item>Giải trí</item>
+        <item>Mua sắm</item>
+        <item>Other</item>
     </string-array>
 
     <string-array name="ngoaite_array">
@@ -16,6 +27,7 @@
     </string-array>
 
     <string-array name="kihan_array">
+        <item>Không có</item>
         <item>1 Tuần</item>
         <item>2 Tuần</item>
         <item>3 Tuần</item>

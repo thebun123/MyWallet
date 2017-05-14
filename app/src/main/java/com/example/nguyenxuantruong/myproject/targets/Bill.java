@@ -10,9 +10,9 @@ public class Bill {
 
     private int  thangPhatSinh, ngayPhatSinh, namPhatSinh;
     private boolean chiTieu; //0-thu   1-chi
-    private String noiDung, ghiChu, soTien;
+    private String noiDung, ghiChu, soTien,hinhthucthanhtoan,kyHan;
 
-    public Bill() {
+    public Bill(int i, int i1, int i2, boolean b, String s, String s1, String s2, String atm) {
         Day day = new Day();
         this.thangPhatSinh = day.getDate();
         this.namPhatSinh = day.getMonth();
@@ -21,6 +21,20 @@ public class Bill {
         this.noiDung = "";
         this.soTien = "";
         this.ghiChu = "";
+        this.hinhthucthanhtoan="vi";
+        this.kyHan ="Không có";
+    }
+
+    public Bill(){
+        Day day = new Day();
+        this.thangPhatSinh = day.getDate();
+        this.namPhatSinh = day.getMonth();
+        this.ngayPhatSinh = day.getYear();
+        this.chiTieu = false;
+        this.noiDung = "";
+        this.soTien = "";
+        this.ghiChu = "";
+        this.hinhthucthanhtoan="vi";
     }
 
     public Bill(int ngayPhatSinh,
@@ -37,6 +51,22 @@ public class Bill {
         this.noiDung = noiDung;
         this.soTien = soTien;
         this.ghiChu = ghiChu;
+    }
+
+    public String getHinhthucthanhtoan() {
+        return hinhthucthanhtoan;
+    }
+
+    public void setHinhthucthanhtoan(String hinhthucthanhtoan) {
+        this.hinhthucthanhtoan = hinhthucthanhtoan;
+    }
+
+    public String getKyHan() {
+        return kyHan;
+    }
+
+    public void setKyHan(String kyHan) {
+        this.kyHan = kyHan;
     }
 
     public int getThangPhatSinh() {
@@ -93,6 +123,10 @@ public class Bill {
 
     public void setSoTien(String soTien) {
         this.soTien = soTien;
+    }
+
+    public String getTime(){
+        return ngayPhatSinh+"/"+thangPhatSinh+"/"+namPhatSinh;
     }
 
 }

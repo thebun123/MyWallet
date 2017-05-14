@@ -101,9 +101,9 @@ public class GetData extends AppCompatActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             try {
-                svm.setText("Done!");
+                svm.setText("Data ok!");
                 Thread.sleep(2000);
-                Intent i = new Intent("android.intent.action.ACCOUNT");
+                Intent i = new Intent("android.intent.action.MAINACTIVITY");
                 startActivity(i);
             } catch (InterruptedException e) {
 

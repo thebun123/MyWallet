@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:paddingTop="60dp"
+    android:background="#dcfbcc"
     tools:context="com.example.nguyenxuantruong.myproject.targets.Targets">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dcfbcc"
+
         android:orientation="vertical"
         android:weightSum="100">
 
@@ -30,7 +31,7 @@
             android:layout_weight="45"
             android:background="#a9ea6b"
             android:orientation="vertical"
-            android:weightSum="100">
+            android:weightSum="116">
 
             <TextView
                 android:id="@+id/textView"
@@ -38,7 +39,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="19"
                 android:gravity="center"
-                android:text="Chi tiết chi tiêu " />
+                android:text="Chi tiết hóa đơn" />
 
             <View
                 android:layout_width="match_parent"
@@ -78,7 +79,8 @@
                         android:id="@+id/rb_im"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Thu nhập" />
+                        android:text="Thu nhập"
+                        android:checked="true"/>
 
                     <RadioButton
                         android:id="@+id/rb_ex"
@@ -124,29 +126,30 @@
                     <TextView
                         android:id="@+id/tvTime"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="70"
-                        android:gravity="center"
-                        android:layout_height="match_parent" />
+                        android:gravity="center" />
 
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="20"
-                        android:text="..."
-                        android:background="#dcfbcc">
+                        android:background="#dcfbcc"
+                        android:text="...">
 
                         <ImageView
-                            android:layout_margin="2sp"
+                            android:id="@+id/bEdit"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                            android:layout_margin="2sp"
                             android:layout_weight="20"
-                            android:text="..."
+                            android:background="#a9ea6b"
                             android:gravity="center"
+                            android:scaleType="center"
                             android:src="@drawable/calendar"
-                            android:id="@+id/bEdit"
 
-                            android:background="#a9ea6b"/>
+                            android:text="..." />
 
                     </LinearLayout>
 
@@ -210,15 +213,14 @@
                     android:background="#dcfbcc" />
 
                 <EditText
-                    android:textSize="12sp"
                     android:id="@+id/etNote"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="69"
-                    android:hint="000000"
-                    android:scrollbars="none"
                     android:gravity="center"
-                    />
+                    android:hint="note"
+                    android:scrollbars="none"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -247,13 +249,57 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="69"
-                    android:textSize="12sp"/>
+                    android:gravity="center"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="16"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:text="Kỳ hạn" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#dcfbcc" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="69"
+                    android:weightSum="3">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"></View>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spKyHan"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.AppCompatSpinner>
+
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
 
         </LinearLayout>
-
 
 
         <LinearLayout
